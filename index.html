@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>Text Clicker - Play Free Online Unblocked!</title>
+  </head>
+  <body>
+    <h1>Text Clicker</h1>
+    <button onclick='promptTextChoice()'>Get Started!</button>
+    <h2 id="user-text">(placeholder text - text not ready yet!)</h2>
+    <script>
+      function promptTextChoice(){
+        let text = prompt('what do you want your text to be?');
+        if (text) {
+          document.getElementById('user-text').textContent = text;
+        }
+      }
+    </script>
+  </body>
+</html>
